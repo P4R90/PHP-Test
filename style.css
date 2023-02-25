@@ -1,0 +1,227 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll Bar */
+
+
+
+/* Header */
+
+.header {
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(255, 183, 183);
+}
+
+.logo {
+    margin-left: 200px;
+    background-image: url("img/Logo.png");
+    flex-grow: 2;
+    background-repeat: no-repeat;
+    height: 70px;
+    
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 100px;
+    list-style-type: none;
+}
+
+.nav a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/* welcome banner */
+.welcome_banner{
+    position: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.welcome_banner img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Body */
+.content {
+    background-color: white;
+    height: 1000px;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #EFA7A7;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copyright {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Contact Form */
+.contact  {
+  background: #EFA7A7;
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 400px;
+  height: 450px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.contact form label {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+html body div.contact form input#name {
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffdcdc;
+  border: none;
+  padding-left: 15px;
+  color: grey;
+}
+
+html body div.contact form input#email {
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffdcdc;
+  border: none;
+  padding-left: 15px;
+  color: grey;
+}
+
+html body div.contact form input#subject {
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffdcdc;
+  border: none;
+  padding-left: 15px;
+  color: grey;
+}
+
+#message {
+  height: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffdcdc;
+  border: none;
+  padding-top: 15px;
+  padding-left: 15px;
+  color: grey;
+}
+
+html body div.contact form button {
+
+  background-color: #ffdcdc;
+  height: 40px;
+  border: none;
+  border-color: white;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #7ADFBB;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #7ADFBB;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+} 
+
+
+
